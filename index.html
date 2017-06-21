@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-  <html>
-    <head>
+<html>
+<head>
 
-      <title>ble-test</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <title>ble-test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "http://example.org",
+    "@type": "AppLinks",
+    "android": [
+      {
+        "@type": "Android",
+        "app_name": "App Links",
+        "package": "org.applinks"
+      }
+    ],
+    "ios": [
+      {
+        "@type": "iOS",
+        "app_name": "App Links",
+        "app_store_id": "12345",
+        "url": "applinks://docs"
+      }
+    ],
+    "web": {
+      "@type": "Web",
+      "url": "http://applinks.org/documentation"
+    }
+  }
+  </script>
 
 
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="//ble-test.azurewebsites.net//" />
-      <meta property="og:image" content="https://www.fun.ac.jp/control-panel/wp-content/uploads/2017/05/funbox201705-1-1.jpg" />
 
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+</head>
 
-
-
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    </head>
-
-    <body>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
-  </html>
+<body>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
